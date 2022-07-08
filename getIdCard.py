@@ -275,7 +275,7 @@ class MyHttpHandler(BaseHTTPRequestHandler):
                 list = [1, 3, 5, 7, 9]
                 return {'sex': random.sample(list, 1)[0], 'type': 1}
             list = [0, 2, 4, 6, 8]
-            return {'sex': random.sample(list, 1)[0], 'type': 2}
+            return {'sex': random.sample(list, 1)[0], 'type': 0}
 
     def do_GET(self):
         ''' 处理get请求 '''
